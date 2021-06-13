@@ -7,7 +7,6 @@ $background: url("/Img/Background.png")
 header
   color: aliceblue
   background-color: #1a1a1a
-  width: auto
 
   display: grid
   text-align: center
@@ -22,17 +21,71 @@ body
 
 main
   display: flex
-  height: 1050px
 
-.text a
+section h4
   font-size: 25px
   color: white
   padding: 30px
 
-section
+
+.left
   width: 33%
+  height: 1050px
 
 
+
+.mid
+  width: 33%
+  height: 1050px
+  display: flex
+  flex-direction: column
+  color: white
+  align-items: center
+  text-align: center
+
+.mid h1
+  font-size: 50px
+
+.mid h4
+
+  border-width: 15px
+  border-color: white
+  border-style: solid
+  background-color: #333
+
+
+.right
+  width: auto
+  height: 1050px
+
+form label button
+  border: white
+  border-style: solid
+  background-color: #1a1a1a
+  color: white
+  font-size: 45px
+  margin-top: 10px
+  cursor: pointer
+
+form label input
+  font-size: 45px
+
+.answerbutton
+  border: white
+  border-style: solid
+  border-width: 15px
+  border-radius: 65px
+  background-color: #1a1a1a
+  color: white
+  font-size: 60px
+  padding: 25px
+  margin-top: 35px
+  cursor: pointer
+
+.answerbutton:hover
+  transition: 0.8s
+  transform: scale(1.1)
+  border-color: #0dcaf0
 
 footer
   position: fixed

@@ -20,10 +20,10 @@
     <main>
         <section class="Intro">
             <div class="Intro-Box">
-                <h3><a>Výtejte na stránce s únikovou hrou! Jedna z mála her, která je v hodná pro všechny věkové kategorie!</a></h3>
+                <h4><a>Výtejte na stránce s únikovou hrou! Jedna z mála her, která je v hodná pro všechny věkové kategorie!</a></h4>
             </div>
             <div class="Intro-Box1">
-                <h3>Vyzkoušejte svoje myšlení a svou zvědavost a ponořte se do této unikové hry! V této hře si vás otestujeme jestli na to máte!</h3>
+                <h4>Vyzkoušejte svoje myšlení a svou zvědavost a ponořte se do této unikové hry! V této hře si vás otestujeme jestli na to máte!</h4>
             </div>
         </section>
         <section  class="Main">
