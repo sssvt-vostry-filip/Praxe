@@ -1,0 +1,48 @@
+* {
+  font-family: "Muli", sans-serif;
+}
+
+header {
+  color: aliceblue;
+  background-color: #1a1a1a;
+  width: auto;
+  display: grid;
+  text-align: center;
+  font-size: 35px;
+}
+
+body {
+  background: url("/Img/Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 1050px;
+}
+
+.text a {
+  font-size: 25px;
+  color: white;
+  padding: 30px;
+}
+
+section {
+  width: 33%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  height: 205px;
+}
+
+/*# sourceMappingURL=styleutek.css.map */
