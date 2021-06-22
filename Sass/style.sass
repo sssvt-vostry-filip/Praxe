@@ -1,60 +1,52 @@
 $background: url("/Img/Background.png")
 
-
 /* settings */
 body
 
   margin: 0
-
-  background: $background
-  background-repeat: no-repeat
-  background-position: center
-  background-size: 120%
-
-
-
-/* Header */
 *
   font-family: 'Muli',sans-serif
-header
-  color: aliceblue
-  background-color: #1a1a1a
-  width: auto
-  height: 150px
 
-/*Header-text*/
-header
-  text-align: center
-  font-size: 28px
-
-/*Header-Grid*/
-header
-  display: grid
 
 
 /*Main*/
 main
   display: flex
-  height: 1050px
-
+  background: $background
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  min-height: 100vh
+  
+  position: relative
+  z-index: 5
+main::before 
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: rgba(0,0,0,0.5)
+  z-index: 2
+ 
+main *
+  z-index: 5
 
 /*Section 1 -- Intro*/
 .Intro
   color: #1a1a1a
-  width: 33%
   text-align: center
-
   display: flex
   flex-direction: column
-
-
-
   align-items: center
+  width: 33%
 
 
 .Intro-Box
   border-style: solid
   border-color: white
+  border-radius: 65px
   color: white
   background:  none
   height: 150px
@@ -65,11 +57,12 @@ main
   justify-content: center
   align-items: center
 
-  font-size: 30px
+  font-size: 20px
 
 .Intro-Box1
   border-style: solid
   border-color: white
+  border-radius: 65px
   background: none
 
   margin: 25px 15px
@@ -88,10 +81,11 @@ main
 .Main
   display: flex
   flex-direction: column
-  width: 33%
   text-align: center
   justify-content: center
   align-items: center
+  width: 33%
+  
 
 .Main h1
   color: white
@@ -140,39 +134,44 @@ main
   text-align: center
 
 
-.Play div
-  height: 33%
 
-.Play button
-  border-style: solid
-  border-width: 3px
-  border-color: white
+.buttonedit 
   border-radius: 65px
+  padding: 15px
+  width: 300px
+  margin-top: 25px
+  border-style: solid
   background: none
-
+  border-color: white
   color: white
-  width: 380px
-  cursor: pointer
+  cursor: pointer;
 
-  margin-top: 25%
-
-.Play button:hover
+.buttonedit:hover
   transition: 0.8s
   transform: scale(1.1)
 
-.Play button a
-  font-size: 60px
-  padding: 15px 25px
+.buttonedit  a
+  font-size: 50px
+
+
+.buttonflex 
+  margin-top: 50px
+
+.inputedit 
+  border-radius: 65px
+  border-color: white 
+  padding: 8px
+
+.gamerules
+  border-style: solid
+  border-radius: 65px
+  border-color: white
+  padding: 15px
+  margin: 25px 15px
+  font-size: 20px
+
+ 
 
 
 
-/*Footer*/
-footer
-  position: fixed
-  left: 0
-  bottom: 0
-  width: 100%
-  background-color: #1a1a1a
-  color: white
-  text-align: center
-  height: 205px
+

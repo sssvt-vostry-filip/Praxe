@@ -1,0 +1,74 @@
+body {
+  margin: 0px;
+  font-family: 'Muli',sans-serif;
+}
+
+header {
+  color: aliceblue;
+  background-color: #1a1a1a;
+  width: auto;
+  height: 10vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  background: url("/Img/Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+  position-z-index: 5;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+main * {
+  z-index: 5;
+}
+
+.buttonback {
+  margin-top: 70vh;
+  border: white;
+  border-style: solid;
+  border-radius: 65px;
+  background-color: none;
+  font-size: 45px;
+  padding: 25px;
+  margin: 0px 15px;
+  margin-top: 35px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.buttonback a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonback:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=stylekonec.css.map */

@@ -1,21 +1,29 @@
+<?php session_start();
+if(isset($_POST['username'])){
+    $_SESSION['username'] = $_POST['username']; 
+    $_SESSION['points'] = 0;
+    header('Location: /src/hra.php?id=0');
+    exit;
+}
+
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href="Sass/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Úniková hra</title>
-
 
 
 </head>
 <body>
     <header>
-        <div>
-            <h1></h1>
-        </div>
+     
     </header>
     <main>
         <section class="Intro">
@@ -27,7 +35,7 @@
             </div>
         </section>
         <section  class="Main">
-                <div>
+                <div class="logoflex">
                     <div class="corners">
                         <div class="top left"></div>
                         <div class="top right"></div>
@@ -37,22 +45,30 @@
                             Úniková Hra
                         </h1>
                     </div>
+                    <div class="buttonflex">
+                        <form action="" method="post" >
 
+                            <input autocomplete="off" class="inputedit" required type="text" name="username" placeholder="Jméno">
+                         <!--<input autocomplete="off" class="inputedit" type="email" name="email" placeholder="Email"><br>-->
+                            <button class="buttonedit" type="submit"><a>
+                                    Hrát!</a></button>
+
+                        </form>
+                    </div>
                 </div>
 
         </section>
         <section  class="Play">
-                <div>
-
+                <div class="gamerules">
+                    <h2>Pravidla</h2>
+                    <h4>Máte pouze 2 šance na to, uhádnout správnou odpověd!</h4>
+                    <h4>Čas je neomezený</h4>
+                    <h4>Hodně štěstí!</h4>
                 </div>
                 <div>
 
                 </div>
-                <div>
-                        <button onclick="window.location.href='/utek.php'"><a>
-                            Hrát!</a>
-                        </button>
-                </div>
+
 
         </section>
     </main>
